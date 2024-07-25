@@ -1,0 +1,335 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    letter-spacing: 0.035em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 3.30vw 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#signup-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3.5vw 4.5vw;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0.15vw;
+}
+
+#signup-container > #title {
+    text-align: center;
+    margin-bottom: 3.25vw;
+}
+
+#signup-container > #title > h1 {
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #444;
+}
+
+#signup-container > #title > p {
+    margin-top: 0.50vw;
+    font-size: 0.65vw;
+    color: #555;
+}
+
+#signup-container > #signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 20
+}
+
+#signup-container > #signup-form .hide {
+    visibility: hidden;
+}
+
+#signup-container > #signup-form .show {
+    visibility: visible;
+}
+
+#signup-container > #signup-form .correct {
+    color: #048000;
+}
+
+#signup-container > #signup-form .warning {
+    color: #c35f0c;
+}
+
+#signup-container > #signup-form .error {
+    color: #dd0c0c;
+}
+
+#signup-container > #signup-form > .details-container .field-container > #label {
+    display: block;
+    margin-bottom: 0.45vw;
+    font-size: 0.75vw;
+    color: #555;
+    font-weight: 400;
+}
+
+#signup-container > #signup-form > .details-container .field-container > #input-and-msg {
+    position: relative;
+}
+
+#signup-container > #signup-form > .details-container .field-container > #input-and-msg > input {
+    width: 18.70vw;
+    height: 2.20vw;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background: rgba(0, 0, 0, 0.08);
+    padding-left: 0.95vw;
+    padding-right: 1.8vw;
+    color: #444;
+    font-size: 0.75vw;
+    outline: none;
+    transition: background 0.15s;
+    font-family: inherit;
+}
+
+#signup-container > #signup-form > .details-container .field-container > #input-and-msg > input::placeholder {
+    color: #444;
+    font-weight: 100;
+    font-size: 0.75vw;
+}
+
+#signup-container > #signup-form > .details-container .field-container > #input-and-msg > input:hover {
+    background: rgba(0, 0, 0, 0.11);
+}
+
+#signup-container > #signup-form > .details-container .field-container > #input-and-msg > input:focus {
+    border: 1px solid #a97e08;;
+    background: rgba(0, 0, 0, 0.13);
+}
+
+#signup-container > #signup-form .error-border {
+    border: 1px solid #dd0c0c !important;
+}
+
+#signup-container > #signup-form > .details-container .field-container > #input-and-msg > span {
+    font-size: 1.10vw;
+    right: 0.30vw;
+    top: 0.55vw;
+}
+
+#signup-container > #signup-form > .details-container .field-container > #input-and-msg > p {
+    margin-top: 0.30vw;
+    font-size: 0.55vw;
+    font-weight: 300;
+    text-align: right;
+}
+
+#signup-container > #signup-form > .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+}
+
+
+#signup-container > #signup-form > #personal-details > #date-of-birth input[type="date"]  {
+    padding-right: 0.30vw;
+}
+
+#signup-container > #signup-form > #personal-details > #date-of-birth > .dob-warning > input[type="date"] {
+    padding-right: 1.65vw;
+}
+
+#signup-container > #signup-form > #password-details {
+    margin-top: 1vw;
+}
+
+#signup-container > #signup-form > #password-details > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#signup-container > #signup-form > #password-details > div .show-password-icon {
+    cursor: pointer;
+    color: #555;
+    font-size: 1.20vw;
+    top: 0.55vw;
+    right: 0.30vw;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password,
+#signup-container > #signup-form > #password-details > #pin > #create-pin {
+    margin-bottom: 0.75vw;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password #input-and-msg .move-show-password {
+    right: 1.65vw !important;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip {
+    width: 13.5vw;
+    background-color: #E8FEE2;
+    border-radius: 5px;
+    padding: 1vw 1.5vw;
+    position: absolute;
+    top: -50%;
+    left: 104.5%;
+    font-size: 0.65vw;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 100%;
+    border-width: 0.80vw;
+    border-style: solid;
+    border-color: transparent #E8FEE2 transparent transparent;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg >  #tooltip > p {
+    font-size: 0.75vw;
+    color: #444;
+    font-weight: 400;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements {
+    margin-top: 0.50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25vw;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements > div {
+    display: flex;
+    align-items: center;
+    gap: 0.45vw;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements #bullet-point {
+    width: 0.40vw;
+    height: 0.40vw;
+    border-radius: 0.25vw;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements .default-bullet-point {
+    background-color: #777;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements .error-bullet-point {
+    background-color: #dd0c0c;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements .correct-bullet-point {
+    background-color: #05b72c;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements .default-msg {
+    color: #555;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements .error-msg {
+    color: #dd0c0c;
+}
+
+#signup-container > #signup-form > #password-details > #password > #create-password > #input-and-msg > #tooltip > #password-requirements .correct-msg {
+    color: #05b72c;
+}
+
+#signup-container > #signup-form > #password-details > #pin > .field-container > #input-and-msg > #pin-inputs-container {
+    display: flex;
+    width: 18.70vw;
+    height: 2.20vw;
+    gap: 1.10vw;
+}
+
+#signup-container > #signup-form > #password-details > #pin > .field-container > #input-and-msg > #pin-inputs-container input {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    text-align: center;
+    color: #444;
+    background: rgba(0, 0, 0, 0.08);
+    font-size: 0.75vw;
+    outline: none;
+}
+
+#signup-container > #signup-form > #password-details > #pin > .field-container > #input-and-msg > #pin-inputs-container input:hover {
+    background-color: rgba(0, 0, 0, 0.11);   
+}
+
+#signup-container > #signup-form > #password-details > #pin > .field-container > #input-and-msg > #pin-inputs-container input:focus {
+    background-color: rgba(0, 0, 0, 0.15);
+    border: 1px solid #a97e08;
+}
+
+#signup-container > #signup-form > #password-details > #pin > .field-container > #input-and-msg > span {
+    top: -1.4vw; 
+}
+
+#signup-container > #signup-form > #signup-btn {
+    margin-top: 2.80vw;
+    padding: 0.45vw 1.90vw;
+    border-radius: 10vw;
+    border: none;
+    background-color: #BCAE7E;
+    color: #FFF;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+    font-size: 0.65vw;
+    transition: background-color 0.15s;
+}
+
+#signup-container > #signup-form > #signup-btn:hover {
+    background-color: #B6A469;
+}
+
+#signup-container > #signup-form > #signup-btn:active {
+    background-color: #A89557;
+}
+
+#signup-container > #signup-form > #signup-btn:disabled {
+    cursor: not-allowed;
+    background-color: #9C8F5A;
+    color: #B7B7B7;
+}
+
+#signup-container > #login-link {
+    font-size: 0.625vw;
+    color: #777;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-top: 1.55vw;
+}
+
+#signup-container > #login-link > #login {
+    color: #555;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#signup-container > #login-link > #login:hover {
+    color: #444;
+    font-weight: 700;
+}
